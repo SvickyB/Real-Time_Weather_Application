@@ -26,6 +26,7 @@ CREATE TABLE IF NOT EXISTS alerts (
     city VARCHAR(100) NOT NULL,
     temperature DECIMAL(5,2) NOT NULL,
     condition VARCHAR(100) NOT NULL,
+    email VARCHAR(255) NOT NULL,
     is_dismissed BOOLEAN DEFAULT FALSE,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
