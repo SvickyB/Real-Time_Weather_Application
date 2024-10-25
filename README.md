@@ -76,7 +76,7 @@ CREATE DATABASE weatherapp;
 Tables will be created automatically on server start.
 
 5. **Configure Environment Variables**
-Create a `.env` file in the backend folder:
+Replace `.env` file in the Root directory:
 ```env
 # Database
 DB_USER=your_username
@@ -112,7 +112,13 @@ cd Real_Time_Weather_Application
 2. **Configure Environment Variables**
 Replace `.env` file in the root directory with the credentials as mentioned above.
 
-3. **Run with Docker Compose**
+4. **Database Setup**
+```sql
+CREATE DATABASE weatherapp;
+```
+Tables will be created automatically on server start.
+
+5. **Run with Docker Compose**
 ```bash
 docker-compose up --build
 ```
